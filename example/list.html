@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var result = '';
+            $('li').each(function(index, element) {
+                result += 'Index = ' + index + ', Value = ' + $(this).text() + '<br/>';
+
+            });
+            $('#resultDiv').html(result);
+        });
+    </script>
+</head>
+
+<body style="font-family:Arial">
+    <ul>
+        <li>US</li>
+        <li>India</li>
+        <li>UK</li>
+        <li>Canada</li>
+        <li>Australia</li>
+    </ul>
+    <div id="resultDiv"></div>
+</body>
+
+</html>
