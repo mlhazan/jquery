@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="jquery-3.1.0.js"></script>
+</head>
+
+<body>
+    <ul>
+    </ul>
+    <script>
+        $(document).ready(function() {
+            var item = {
+                id: 1,
+                firstName: 'Harrison',
+                lastName: 'McMurray',
+                phone: '416 789 0988',
+                address: '32 Oliver st'
+            };
+            //The following script demonstrates how you call each() directly.
+            $.each(item, function(index, value) {
+                console.log(value);
+                $('ul').append("<li>" + value + "</li>");
+            });
+
+            $.each(item, function() {
+                console.log(this);
+                $('ul').append("<li>" + this + "</li>");
+            });
+
+            $(item).each(function() {
+                $('ul').append("<li>" + item + "</li>");
+            });
+        });
+    </script>
+</body>
+
+</html>

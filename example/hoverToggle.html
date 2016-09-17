@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="jquery-3.1.0.js"></script>
+    <style>
+        div {
+            border: 1px solid rgb(200, 200, 200);
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            float: left;
+        }
+
+        div.tmpExampleOver {
+            background: #5092c5;
+        }
+
+        div.tmpExampleOn {
+            background: #165b91;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+        $(document).ready(function() {
+            $('div').hover(function() {
+                $(this).addClass('tmpExampleOver');
+            }, function() {
+                $(this).removeClass('tmpExampleOver');
+            });
+
+
+            $('div').toggle(function() {
+                $(this).addClass('tmpExampleOver');
+            }, function() {
+                $(this).removeClass('tmpExampleOver');
+            });
+
+        });
+    </script>
+</body>
+
+</html>

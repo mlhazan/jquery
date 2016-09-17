@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="jquery-3.1.0.js"></script>
+    <style>
+        body {
+            font: 16px sans-serif;
+        }
+
+        h4 {
+            font-size: 16px;
+            margin: 0 0 5px 0;
+        }
+
+        ul#tmpPlaces {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul#tmpPlaces li {
+            margin: 1px;
+            padding: 3px;
+        }
+
+        li.tmpSiblings {
+            background: khaki;
+        }
+    </style>
+
+    <script>
+        var tmpExample = {
+            ready: function() {
+                $('ul#tmpPlaces li.tmpExampleCity').siblings().addClass('tmpSiblings');
+            }
+        };
+        $(document).ready(tmpExample.ready);
+
+        //
+        // $(document).ready(function() {
+        //     $(‘ul# tmpPlaces li.tmpExampleCity’).siblings().addClass(‘tmpSiblings’);
+        // });
+    </script>
+</head>
+
+<body>
+    <h4>Places in Middle-Earth</h4>
+    <ul id="tmpPlaces">
+        <li>Mordor</li>
+        <li>Gondor</li>
+        <li>Rohan</li>
+        <li>Moria</li>
+        <li>Lothlorien</li>
+        <li>Dead Marshes</li>
+        <li class="tmpExampleCity">Minas Tirth</li>
+        <li>Geet</li>
+
+    </ul>
+
+</body>
+
+</html>

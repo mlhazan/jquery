@@ -27,20 +27,8 @@
 
     <script>
         $(document).ready(function() {
-            $('ul#popup li a').click(function() {
-                var newwindow = window.open(this.href, 'anyName', 'height=400,width=480');
-                if (window.focus) {
-                    newwindow.focus();
-                }
-                return false;
-            });
 
-            $('ul#tab li a').click(function() {
-
-                window.open(this.href);
-                return false;
-            });
-
+            $('ul#tab').find('li').addClass('foundClass');
         });
     </script>
 </head>
@@ -53,12 +41,7 @@
         <li><a href="http://www.jquery.com">jQuery</a></li>
     </ul>
 
-    <ul id="popup">
-        <li><a href="http://www.wrox.com">Pop Wrox</a></li>
-        <li><a href="http://www.gizmodo.com">Pop Gizmodo</a></li>
-        <li><a href="http://www.apple.com">Pop Apple</a></li>
-        <li><a href="http://www.jquery.com">Pop jQuery</a></li>
-    </ul>
+
 
 </body>
 
