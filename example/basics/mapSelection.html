@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        h4 {
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 5px;
+            padding: 0;
+        }
+
+        ul li {
+            position: relative;
+            background: #eff557;
+            border: 1px solid black;
+            padding: 3px;
+            margin: 2px 0;
+        }
+
+        i {
+            position: absolute;
+            top: 3px;
+            right: 3px;
+        }
+    </style>
+    <script src="jquery-3.1.0.js"></script>
+</head>
+
+<body>
+    <h4>Rubber Soul</h4>
+    <ul id="tmpAlbum">
+        <li class="Paul">Drive My Car</li>
+        <li class="John">Norwegian Wood (This Bird Has Flown)</li>
+        <li class="Paul">You Won"t See Me</li>
+        <li class="John">Nowhere Man</li>
+        <li class="George">Think for Yourself</li>
+        <li class="John">The Word</li>
+        <li class="Paul">Michelle</li>
+        <li class="John">What Goes On</li>
+        <li class="John">Girl</li>
+        <li class="Paul">I"m Looking Through You</li>
+        <li class="John">In My Life</li>
+        <li class="John">Wait</li>
+        <li class="George">If I Needed Someone</li>
+        <li class="John">Run for Your Life</li>
+    </ul>
+    <ul id="tmpMapped"></ul>
+    <script>
+        /*The concept of mapping is taking one set of values and modifying one or more of those values to create a new set of values. No items are removed from the set during a mapping, so it’s expected that you’ll have a set of values of the same length when you finish mapping as when you started*/
+
+        $(document).ready(function() {
+            var $mapped = $('li').map(function($key) {
+                switch (true) {
+                    case ($(this).hasClass('John')):
+                        {
+                            return $(this).text() + "<i> John Lennon </i>";
+                        }
+                    case ($(this).hasClass('Paul')):
+                        {
+                            return $(this).text() + "<i> Paul McCartney </i>";
+                        }
+                    case ($(this).hasClass('George')):
+                        {
+                            return $(this).text() + "<i> George Harrison </i>";
+                        }
+                }
+
+            });
+            $('ul#tmpAlbum').hide();
+            $($mapped).each(function() {
+                $('ul#tmpMapped').append("<li>" + this + "</li>\n");
+            });
+            console.log($mapped);
+        });
+    </script>
+</body>
+
+</html>

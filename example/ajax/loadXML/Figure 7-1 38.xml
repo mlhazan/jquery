@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+  <hLocationCountryISO2>CA</hLocationCountryISO2>
+  <hLocationCountryISO3>CAN</hLocationCountryISO3>
+  <hLocationStateLabel>Province</hLocationStateLabel>
+  <hLocationState hLocationStateID='0'> </hLocationState>
+  <hLocationState hLocationStateID="66">Alberta</hLocationState>
+  <hLocationState hLocationStateID="67">British Columbia</hLocationState>
+  <hLocationState hLocationStateID="68">Manitoba</hLocationState>
+  <hLocationState hLocationStateID="69">Newfoundland</hLocationState>
+  <hLocationState hLocationStateID="70">New Brunswick</hLocationState>
+  <hLocationState hLocationStateID="71">Nova Scotia</hLocationState>
+  <hLocationState hLocationStateID="72">Northwest Territories</hLocationState>
+  <hLocationState hLocationStateID="73">Nunavut</hLocationState>
+  <hLocationState hLocationStateID="74">Ontario</hLocationState>
+  <hLocationState hLocationStateID="75">Prince Edward Island</hLocationState>
+  <hLocationState hLocationStateID="76">Quebec</hLocationState>
+  <hLocationState hLocationStateID="77">Saskatchewan</hLocationState>
+  <hLocationState hLocationStateID="78">Yukon Territory</hLocationState>
+</response>

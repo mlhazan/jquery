@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        h4 {
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 5px;
+            padding: 0;
+        }
+
+        ul li {
+            position: relative;
+            background: #a9c1ff;
+            border: 2px solid #9ab6fc;
+            padding: 3px;
+        }
+    </style>
+    <script src="jquery-3.1.0.js"></script>
+</head>
+
+<body>
+    <h4>Rubber Soul</h4>
+    <ul id="tmpAlbum">
+        <li class="Paul">Drive My Car</li>
+        <li class="John">Norwegian Wood (This Bird Has Flown)</li>
+        <li class="Paul">You Won"t See Me</li>
+        <li class="John">Nowhere Man</li>
+        <li class="George">Think for Yourself</li>
+        <li class="John">The Word</li>
+        <li class="Paul">Michelle</li>
+        <li class="John">What Goes On</li>
+        <li class="John">Girl</li>
+        <li class="Paul">I"m Looking Through You</li>
+        <li class="John">In My Life</li>
+        <li class="John">Wait</li>
+        <li class="George">If I Needed Someone</li>
+        <li class="John">Run for Your Life</li>
+    </ul>
+    <ul id="tmpMapped"></ul>
+    <script>
+        /*The concept of mapping is taking one set of values and modifying one or more of those values to create a new set of values. No items are removed from the set during a mapping, so it's expected that you'll have a set of values of the same length when you finish mapping as when you started*/
+
+        $(document).ready(
+            function() {
+                var $items = [
+                    'Taxman',
+                    'Eleanor Rigby',
+                    'I\'m Only Sleeping',
+                    'Love You To',
+                    'Here, There and Everywhere',
+                    'Yellow Submarine',
+                    'She Said, She Said',
+                    'Good Day Sunshine',
+                    'And Your Bird Can Sing',
+                    'For No One',
+                    'Doctor Robert',
+                    'I Want to Tell You',
+                    'Got to Get You into My Life',
+                    'Tomorrow Never Knows'
+                ];
+                var $i = 0;
+                var $mapped = $($items).map(function($key) {
+                    $i++;
+                    return ($i < 10 ? '0' + $i : $i) + ' ' + this;
+                });
+                $($mapped).each(function() {
+                    $('ul#tmpMapped').append("<li>" + this + "</li>\n");
+                });
+            }
+        );
+    </script>
+</body>
+
+</html>

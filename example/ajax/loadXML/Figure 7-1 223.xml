@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+  <hLocationCountryISO2>US</hLocationCountryISO2>
+  <hLocationCountryISO3>USA</hLocationCountryISO3>
+  <hLocationStateLabel>State</hLocationStateLabel>
+  <hLocationState hLocationStateID='0'> </hLocationState>
+  <hLocationState hLocationStateID="2">Alaska</hLocationState>
+  <hLocationState hLocationStateID="1">Alabama</hLocationState>
+  <hLocationState hLocationStateID="10">Armed Forces Middle East</hLocationState>
+  <hLocationState hLocationStateID="11">Armed Forces Pacific</hLocationState>
+  <hLocationState hLocationStateID="5">Arkansas</hLocationState>
+  <hLocationState hLocationStateID="3">American Samoa</hLocationState>
+  <hLocationState hLocationStateID="4">Arizona</hLocationState>
+  <hLocationState hLocationStateID="12">California</hLocationState>
+  <hLocationState hLocationStateID="13">Colorado</hLocationState>
+  <hLocationState hLocationStateID="14">Connecticut</hLocationState>
+  <hLocationState hLocationStateID="16">District of Columbia</hLocationState>
+  <hLocationState hLocationStateID="15">Delaware</hLocationState>
+  <hLocationState hLocationStateID="18">Florida</hLocationState>
+  <hLocationState hLocationStateID="17">Federated States Of Micronesia</hLocationState>
+  <hLocationState hLocationStateID="19">Georgia</hLocationState>
+  <hLocationState hLocationStateID="20">Guam</hLocationState>
+  <hLocationState hLocationStateID="21">Hawaii</hLocationState>
+  <hLocationState hLocationStateID="25">Iowa</hLocationState>
+  <hLocationState hLocationStateID="22">Idaho</hLocationState>
+  <hLocationState hLocationStateID="23">Illinois</hLocationState>
+  <hLocationState hLocationStateID="24">Indiana</hLocationState>
+  <hLocationState hLocationStateID="26">Kansas</hLocationState>
+  <hLocationState hLocationStateID="27">Kentucky</hLocationState>
+  <hLocationState hLocationStateID="28">Louisiana</hLocationState>
+  <hLocationState hLocationStateID="32">Massachusetts</hLocationState>
+  <hLocationState hLocationStateID="31">Maryland</hLocationState>
+  <hLocationState hLocationStateID="29">Maine</hLocationState>
+  <hLocationState hLocationStateID="30">Marshall Islands</hLocationState>
+  <hLocationState hLocationStateID="33">Michigan</hLocationState>
+  <hLocationState hLocationStateID="34">Minnesota</hLocationState>
+  <hLocationState hLocationStateID="36">Missouri</hLocationState>
+  <hLocationState hLocationStateID="46">Northern Mariana Islands</hLocationState>
+  <hLocationState hLocationStateID="35">Mississippi</hLocationState>
+  <hLocationState hLocationStateID="37">Montana</hLocationState>
+  <hLocationState hLocationStateID="44">North Carolina</hLocationState>
+  <hLocationState hLocationStateID="45">North Dakota</hLocationState>
+  <hLocationState hLocationStateID="38">Nebraska</hLocationState>
+  <hLocationState hLocationStateID="40">New Hampshire</hLocationState>
+  <hLocationState hLocationStateID="41">New Jersey</hLocationState>
+  <hLocationState hLocationStateID="42">New Mexico</hLocationState>
+  <hLocationState hLocationStateID="39">Nevada</hLocationState>
+  <hLocationState hLocationStateID="43">New York</hLocationState>
+  <hLocationState hLocationStateID="47">Ohio</hLocationState>
+  <hLocationState hLocationStateID="48">Oklahoma</hLocationState>
+  <hLocationState hLocationStateID="49">Oregon</hLocationState>
+  <hLocationState hLocationStateID="51">Pennsylvania</hLocationState>
+  <hLocationState hLocationStateID="52">Puerto Rico</hLocationState>
+  <hLocationState hLocationStateID="50">Palau</hLocationState>
+  <hLocationState hLocationStateID="53">Rhode Island</hLocationState>
+  <hLocationState hLocationStateID="54">South Carolina</hLocationState>
+  <hLocationState hLocationStateID="55">South Dakota</hLocationState>
+  <hLocationState hLocationStateID="56">Tennessee</hLocationState>
+  <hLocationState hLocationStateID="57">Texas</hLocationState>
+  <hLocationState hLocationStateID="58">Utah</hLocationState>
+  <hLocationState hLocationStateID="61">Virginia</hLocationState>
+  <hLocationState hLocationStateID="60">Virgin Islands</hLocationState>
+  <hLocationState hLocationStateID="59">Vermont</hLocationState>
+  <hLocationState hLocationStateID="62">Washington</hLocationState>
+  <hLocationState hLocationStateID="64">Wisconsin</hLocationState>
+  <hLocationState hLocationStateID="63">West Virginia</hLocationState>
+  <hLocationState hLocationStateID="65">Wyoming</hLocationState>
+</response>

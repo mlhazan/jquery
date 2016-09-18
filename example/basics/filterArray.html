@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        h4 {
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 5px;
+            padding: 0;
+        }
+    </style>
+    <script src="jquery-3.1.0.js"></script>
+</head>
+
+<body>
+    <h4>Rubber Soul</h4>
+    <ul id="tmpAlbum">
+        <li class="Paul">Drive My Car</li>
+        <li class="John">Norwegian Wood (This Bird Has Flown)</li>
+        <li class="Paul">You Won"t See Me</li>
+        <li class="John">Nowhere Man</li>
+        <li class="George">Think for Yourself</li>
+        <li class="John">The Word</li>
+        <li class="Paul">Michelle</li>
+        <li class="John">What Goes On</li>
+        <li class="John">Girl</li>
+        <li class="Paul">I"m Looking Through You</li>
+        <li class="John">In My Life</li>
+        <li class="John">Wait</li>
+        <li class="George">If I Needed Someone</li>
+        <li class="John">Run for Your Life</li>
+    </ul>
+    <ul id="tmpFiltered"></ul>
+    <script>
+        $(document).ready(function() {
+            $('ul#tmpAlbum').hide();
+            var items = [];
+            $('li').each(function() {
+                items.push($(this).text());
+                //$items.push(this.innerText);
+                //this refers to a to a DOM element and $(this) refers to a jQuery object.
+            });
+            var $filtered = $.grep(items, function($value, $key) {
+                return ($value.indexOf('for') != -1);
+            });
+
+            $($filtered).each(function() {
+                $('ul#tmpFiltered').append("<li>" + this + "</li>\n");
+            });
+        });
+    </script>
+</body>
+
+</html>
